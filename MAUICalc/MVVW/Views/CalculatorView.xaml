@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MAUICalculator.MVVW.Views.CalculatorView"
+    Title="Calculator View">
+    <VerticalStackLayout        
+            VerticalOptions="Start" 
+            HorizontalOptions="Center">
+        <Frame 
+            BorderColor="Gray"
+            CornerRadius="10"
+            Margin="10"
+            VerticalOptions="Start">
+            <StackLayout>
+                <Label Text="23"
+                       HorizontalTextAlignment="End"
+                       VerticalTextAlignment="End"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       Margin="1"
+                       HeightRequest="100"/>
+                <Label Text="24"
+                       HorizontalTextAlignment="End"
+                       VerticalTextAlignment="End"
+                       FontSize="45"
+                       FontAttributes="Bold"
+                       Margin="1"
+                       HeightRequest="100"/>
+            </StackLayout>
+        </Frame>
+        <HorizontalStackLayout
+            Margin="1"
+            HorizontalOptions="Center">
+        <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="AC"
+            TextColor="Red"
+            BackgroundColor="LightGray"
+            FontSize="25"
+            FontAttributes="Bold">
+            
+        </Button>
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="D"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="%"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="/"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+            
+        </HorizontalStackLayout>
+       
+        <HorizontalStackLayout
+            Margin="1"
+            HorizontalOptions="Center">
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="7"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="8"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="9"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="*"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout
+            Margin="1"
+            HorizontalOptions="Center">
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="4"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="5"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="6"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="-"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout
+            Margin="1"
+            HorizontalOptions="Center">
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="1"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="2"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="3"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="1"
+            Text="+"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+   
+</ContentPage>
