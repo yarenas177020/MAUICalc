@@ -2,8 +2,14 @@
 <ContentPage 
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Converters="clr-namespace:MAUICalc.MVVW.Converters"
     x:Class="MAUICalculator.MVVW.Views.CalculatorView"
+     
+    
     Title="Calculator View">
+    <ContentPage.Resources>
+        <Converters:DecimalConverter x:Key="decimalConverter"/>
+    </ContentPage.Resources>
     <VerticalStackLayout        
             VerticalOptions="Start" 
             HorizontalOptions="Center">
@@ -13,14 +19,14 @@
             Margin="10"
             VerticalOptions="Start">
             <StackLayout>
-                <Label Text="23"
+                <Label Text="{Binding Numbers}"
                        HorizontalTextAlignment="End"
                        VerticalTextAlignment="End"
                        FontSize="30"
                        FontAttributes="Bold"
                        Margin="1"
-                       HeightRequest="100"/>
-                <Label Text="24"
+                       HeightRequest="90"/>
+                <Label Text="0"
                        HorizontalTextAlignment="End"
                        VerticalTextAlignment="End"
                        FontSize="45"
@@ -53,7 +59,8 @@
             TextColor="Black"
             BackgroundColor="LightGray"
             FontSize="30"
-            FontAttributes="Bold">
+            FontAttributes="Bold"
+            Command="{Binding Number1}">
 
             </Button>
             <Button
@@ -95,7 +102,8 @@
             TextColor="Black"
             BackgroundColor="LightGray"
             FontSize="30"
-            FontAttributes="Bold">
+            FontAttributes="Bold"
+            Command="{Binding ClickCommand}">
 
             </Button>
             <Button
@@ -107,7 +115,8 @@
             TextColor="Black"
             BackgroundColor="LightGray"
             FontSize="30"
-            FontAttributes="Bold">
+            FontAttributes="Bold"
+            Command="{Binding ClickCommand}">
 
             </Button>
             <Button
@@ -242,6 +251,48 @@
             FontAttributes="Bold">
 
             </Button>
+
+        </HorizontalStackLayout>
+        
+        <HorizontalStackLayout
+            Margin="1"
+            HorizontalOptions="Center">
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="130"
+            HeightRequest="60"
+            Margin="5"
+            Text="0"
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="."
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>
+            <Button
+            HorizontalOptions="Start"
+            WidthRequest="60"
+            HeightRequest="60"
+            Margin="5"
+            Text="="
+            TextColor="Black"
+            BackgroundColor="LightGray"
+            FontSize="30"
+            FontAttributes="Bold">
+
+            </Button>           
 
         </HorizontalStackLayout>
     </VerticalStackLayout>
