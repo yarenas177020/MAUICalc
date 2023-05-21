@@ -8,13 +8,13 @@ namespace MAUICalc.MVVW.Models
 {
     public class CalculatorModel
     {
-        public string Number1 { get; set; }
+        public double Number1 { get; set; }
 
-        public string Number2 { get; set; }
+        public double Number2 { get; set; }
 
         public string Operator { get; set; }
 
-        public string Resullt { get; set; }
+        public double Resullt { get; set; }
 
     }
 }
